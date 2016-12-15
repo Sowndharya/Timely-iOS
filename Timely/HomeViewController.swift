@@ -17,6 +17,7 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
     
     var checkinsForTheDay = [NSManagedObject]()
     let cellReuseIdentifier = "chekinCell"
+    var checkinForTheDayArray : [String] = []
     
     
     override func viewDidLoad() {
@@ -33,12 +34,14 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
         return checkinsForTheDay.count
     }
     
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let checkinCell = self.checkinTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier)
-        let checkInLocation = self.checkinsForTheDay[indexPath.row]
-        checkinCell?.textLabel?.text = checkInLocation.
+        //let checkInLocation = self.checkinsForTheDay[indexPath.row]
+        checkinCell?.textLabel?.text = checkinForTheDayArray[indexPath.row]
+        return checkinCell!
+    
     }
-
+    
     
 }
