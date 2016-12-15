@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844FEC9A1E02B31C003FF7DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FEC991E02B31C003FF7DF /* HomeViewController.swift */; };
 		8494D3FC1E027B79008AF519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494D3FB1E027B79008AF519 /* AppDelegate.swift */; };
-		8494D3FE1E027B79008AF519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494D3FD1E027B79008AF519 /* ViewController.swift */; };
 		8494D4011E027B79008AF519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8494D3FF1E027B79008AF519 /* Main.storyboard */; };
 		8494D4041E027B79008AF519 /* Timely.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8494D4021E027B79008AF519 /* Timely.xcdatamodeld */; };
 		8494D4061E027B79008AF519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8494D4051E027B79008AF519 /* Assets.xcassets */; };
@@ -35,9 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844FEC991E02B31C003FF7DF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8494D3F81E027B79008AF519 /* Timely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8494D3FB1E027B79008AF519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8494D3FD1E027B79008AF519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8494D4001E027B79008AF519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8494D4031E027B79008AF519 /* Timely.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Timely.xcdatamodel; sourceTree = "<group>"; };
 		8494D4051E027B79008AF519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8494D3FB1E027B79008AF519 /* AppDelegate.swift */,
-				8494D3FD1E027B79008AF519 /* ViewController.swift */,
+				844FEC991E02B31C003FF7DF /* HomeViewController.swift */,
 				8494D3FF1E027B79008AF519 /* Main.storyboard */,
 				8494D4051E027B79008AF519 /* Assets.xcassets */,
 				8494D4071E027B79008AF519 /* LaunchScreen.storyboard */,
@@ -263,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8494D4041E027B79008AF519 /* Timely.xcdatamodeld in Sources */,
-				8494D3FE1E027B79008AF519 /* ViewController.swift in Sources */,
 				8494D3FC1E027B79008AF519 /* AppDelegate.swift in Sources */,
+				844FEC9A1E02B31C003FF7DF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +509,7 @@
 				8494D4251E027B79008AF519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8494D4261E027B79008AF519 /* Build configuration list for PBXNativeTarget "TimelyTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +518,7 @@
 				8494D4281E027B79008AF519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8494D4291E027B79008AF519 /* Build configuration list for PBXNativeTarget "TimelyUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +527,7 @@
 				8494D42B1E027B79008AF519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
