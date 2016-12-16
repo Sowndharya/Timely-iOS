@@ -30,6 +30,9 @@
                                 <rect key="frame" x="16" y="603" width="343" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Create Checkin"/>
+                                <connections>
+                                    <segue destination="Ieo-U2-6JP" kind="show" id="BVo-Ge-KfH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Checkin View Controller-->
         <scene sceneID="p68-Qw-AJl">
             <objects>
-                <viewController id="qgR-ty-XYx" sceneMemberID="viewController">
+                <viewController id="qgR-ty-XYx" customClass="CheckinViewController" customModule="Timely" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Vl-Aj-msd"/>
                         <viewControllerLayoutGuide type="bottom" id="nye-8l-Gyz"/>
@@ -100,13 +103,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Checkin"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="timer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qan-fT-bB0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="00:00:00" textAlignment="center" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="Qan-fT-bB0">
                                 <rect key="frame" x="16" y="318" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPS-MI-6kg">
+                                <rect key="frame" x="16" y="159" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Checkin"/>
+                                <connections>
+                                    <action selector="checkinClicked:" destination="qgR-ty-XYx" eventType="touchUpInside" id="mnZ-oi-9Iq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -114,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqt-wc-s6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="839.73013493253382"/>
+            <point key="canvasLocation" x="1076" y="943.17841079460277"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xIB-v7-Kdd">
@@ -150,7 +162,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rbc-yY-yd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="840"/>
+            <point key="canvasLocation" x="217" y="944"/>
         </scene>
     </scenes>
 </document>

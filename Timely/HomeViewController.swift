@@ -22,6 +22,7 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //register(_:forCellReuseIdentifier:) guarantees your table view will return a cell of the correct type when the Cell reuseIdentifier is provided to the dequeue method.
         self.checkinTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
     }
     
@@ -35,11 +36,11 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-        
-        let checkinCell = self.checkinTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier)
-        //let checkInLocation = self.checkinsForTheDay[indexPath.row]
-        checkinCell?.textLabel?.text = checkinForTheDayArray[indexPath.row]
-        return checkinCell!
+                
+        let checkin = checkinsForTheDay[indexPath.row]
+        let checkinCell = self.checkinTable.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        checkinCell.textLabel?.text = checkin.value(forKey: "loacationId") as? String
+        return checkinCell
     
     }
     
