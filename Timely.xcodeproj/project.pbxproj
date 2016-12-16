@@ -11,6 +11,7 @@
 		849429DB1E03B31900B2D260 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849429DA1E03B31900B2D260 /* CheckinViewController.swift */; };
 		849429DD1E03F41B00B2D260 /* Play.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849429DC1E03F41B00B2D260 /* Play.swift */; };
 		849429DF1E0400D300B2D260 /* CheckinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849429DE1E0400D300B2D260 /* CheckinCell.swift */; };
+		849429E11E040EB400B2D260 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849429E01E040EB400B2D260 /* Constants.swift */; };
 		8494D3FC1E027B79008AF519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8494D3FB1E027B79008AF519 /* AppDelegate.swift */; };
 		8494D4011E027B79008AF519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8494D3FF1E027B79008AF519 /* Main.storyboard */; };
 		8494D4041E027B79008AF519 /* Timely.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8494D4021E027B79008AF519 /* Timely.xcdatamodeld */; };
@@ -42,6 +43,7 @@
 		849429DA1E03B31900B2D260 /* CheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinViewController.swift; sourceTree = "<group>"; };
 		849429DC1E03F41B00B2D260 /* Play.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Play.swift; sourceTree = "<group>"; };
 		849429DE1E0400D300B2D260 /* CheckinCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckinCell.swift; sourceTree = "<group>"; };
+		849429E01E040EB400B2D260 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8494D3F81E027B79008AF519 /* Timely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8494D3FB1E027B79008AF519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8494D4001E027B79008AF519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				8494D3FB1E027B79008AF519 /* AppDelegate.swift */,
 				844FEC991E02B31C003FF7DF /* HomeViewController.swift */,
 				8494D3FF1E027B79008AF519 /* Main.storyboard */,
+				849429E01E040EB400B2D260 /* Constants.swift */,
 				849429DE1E0400D300B2D260 /* CheckinCell.swift */,
 				8494D4051E027B79008AF519 /* Assets.xcassets */,
 				8494D4071E027B79008AF519 /* LaunchScreen.storyboard */,
@@ -275,6 +278,7 @@
 				849429DF1E0400D300B2D260 /* CheckinCell.swift in Sources */,
 				8494D3FC1E027B79008AF519 /* AppDelegate.swift in Sources */,
 				849429DB1E03B31900B2D260 /* CheckinViewController.swift in Sources */,
+				849429E11E040EB400B2D260 /* Constants.swift in Sources */,
 				844FEC9A1E02B31C003FF7DF /* HomeViewController.swift in Sources */,
 				849429DD1E03F41B00B2D260 /* Play.swift in Sources */,
 			);

@@ -11,6 +11,8 @@ import UIKit
 import CoreData
 class HomeViewController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    
     @IBOutlet weak var checkinTable: UITableView!
     
     let userId = "09123FR"
@@ -21,12 +23,11 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
     
     
     let date = NSDate()
-    @IBOutlet weak var navigationDate: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //register(_:forCellReuseIdentifier:) guarantees your table view will return a cell of the correct type when the Cell reuseIdentifier is provided to the dequeue method.
+        
         self.checkinTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         let formatter = DateFormatter()
         
@@ -34,7 +35,7 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
         
         let dateStr = formatter.string(from: date as Date)
         
-        navigationDate.text = dateStr
+        self.title = dateStr
 
     }
     
@@ -55,6 +56,15 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
         return checkinCell
     
     }
+    
+    @IBAction func nextClick(_ sender: UIBarButtonItem) {
+    }
+    
+    
+    
+    @IBAction func previousClick(_ sender: UIBarButtonItem) {
+    }
+    
     
     
 }

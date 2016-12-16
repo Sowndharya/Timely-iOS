@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+import CoreData
+class CheckinCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var checkinLocation: UILabel!
+    
+    
+    @IBOutlet weak var checkinTiming: UILabel!
+    
+    func bindData(checkins: NSManagedObject) {
+    
+    }
+}
