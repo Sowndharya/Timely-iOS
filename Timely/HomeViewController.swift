@@ -20,10 +20,22 @@ class HomeViewController : UIViewController, UITableViewDataSource, UITableViewD
     var checkinForTheDayArray : [String] = []
     
     
+    let date = NSDate()
+    @IBOutlet weak var navigationDate: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //register(_:forCellReuseIdentifier:) guarantees your table view will return a cell of the correct type when the Cell reuseIdentifier is provided to the dequeue method.
         self.checkinTable.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        let formatter = DateFormatter()
+        
+        formatter.dateStyle = .medium
+        
+        let dateStr = formatter.string(from: date as Date)
+        
+        navigationDate.text = dateStr
+
     }
     
     override func didReceiveMemoryWarning() {
