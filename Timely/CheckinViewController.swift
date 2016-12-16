@@ -26,12 +26,12 @@ class CheckinViewController : UIViewController {
         
         if checkinClick {
             
-            let hours = calendar.component(.hour, from: date as Date)
-            let mins = calendar.component(.minute, from: date as Date)
+            //let hours = calendar.component(.hour, from: date as Date)
+            //let mins = calendar.component(.minute, from: date as Date)
             
             self.checkinClick = false
             sender.setTitle("Checkout", for: UIControlState.normal)
-            self.createCheckin(checkinHour: hours, checkinMins: mins, checkinDate: date as Date)
+            //self.createCheckin(checkinHour: hours, checkinMins: mins, checkinDate: date as Date)
         }
         else {
             self.checkinClick = true
